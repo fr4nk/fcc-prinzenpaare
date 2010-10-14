@@ -32,22 +32,22 @@
 /**
  * Fields
  */
-$GLOBALS['TL_LANG']['fcc_pp_jahrgang'][''] = array('', '');
+$GLOBALS['TL_LANG']['tl_fcc_pp_name'][''] = array('', '');
 
 
 /**
  * Reference
  */
-$GLOBALS['TL_LANG']['fcc_pp_jahrgang'][''] = '';
+$GLOBALS['TL_LANG']['tl_fcc_pp_name'][''] = '';
 
 
 /**
  * Buttons
  */
-$GLOBALS['TL_LANG']['fcc_pp_jahrgang']['new']    = array('', '');
-$GLOBALS['TL_LANG']['fcc_pp_jahrgang']['edit']   = array('', '');
-$GLOBALS['TL_LANG']['fcc_pp_jahrgang']['copy']   = array('', '');
-$GLOBALS['TL_LANG']['fcc_pp_jahrgang']['delete'] = array('', '');
-$GLOBALS['TL_LANG']['fcc_pp_jahrgang']['show']   = array('', '');
+$GLOBALS['TL_LANG']['tl_fcc_pp_name']['new']    = array('', '');
+$GLOBALS['TL_LANG']['tl_fcc_pp_name']['edit']   = array('', '');
+$GLOBALS['TL_LANG']['tl_fcc_pp_name']['copy']   = array('', '');
+$GLOBALS['TL_LANG']['tl_fcc_pp_name']['delete'] = array('', '');
+$GLOBALS['TL_LANG']['tl_fcc_pp_name']['show']   = array('', '');
 
 ?>

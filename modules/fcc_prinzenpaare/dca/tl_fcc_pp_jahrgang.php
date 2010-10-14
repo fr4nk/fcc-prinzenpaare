@@ -48,15 +48,15 @@ $GLOBALS['TL_DCA']['tl_fcc_pp_jahrgang'] = array
 	(
 		'sorting' => array
 		(
-			'mode'                    => 1,
+			'mode'                    => 0,
 			'fields'                  => array('session_beginn'),
-			'flag'                    => 9
+			'flag'                    => 11
 		),
 		'label' => array
 		(
 			'fields'                  => array('session_beginn','session_ende'),
-			'format'                  => 'Session von %s bis %s'
-      'labelCallback'           => 
+			'format'                  => 'Session von %s bis %s',
+      'label_callback'          => array ('tl_fcc_pp_jahrgang','label_callback')
 		),
 		'global_operations' => array
 		(
@@ -121,7 +121,7 @@ $GLOBALS['TL_DCA']['tl_fcc_pp_jahrgang'] = array
 			'inputType'               => 'text',
       'search'                  => true, 
       'sorting'                 => true, 
-      'flag'                    => 6,
+      'flag'                    => 9,
 			'eval'                    => array('rgxp'=>'date', 'datepicker'=>$this->getDatePickerString(), 'tl_class'=>'w50 wizard')
 		),
     'session_ende'   => array
@@ -157,5 +157,22 @@ $GLOBALS['TL_DCA']['tl_fcc_pp_jahrgang'] = array
 		)
 	)
 );
+
+
+/**
+ * Class tl_comments
+ *
+ * Provide miscellaneous methods that are used by the data configuration array.
+ * @copyright  fmm 2010
+ * @author     Frank Mattes 
+ * @package    FCC
+ */
+class tl_fcc_pp_jahrgang extends Backend
+{
+function label_callback($row, $label) {
+  return ('Session ' . date("Y", $row['session_beginn']) .'/'.date("Y", $row['session_ende']));
+}
+
+}
 
 ?>
