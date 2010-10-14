@@ -44,10 +44,10 @@ $GLOBALS['TL_LANG']['fcc_pp_jahrgang'][''] = '';
 /**
  * Buttons
  */
-$GLOBALS['TL_LANG']['fcc_pp_jahrgang']['new']    = array('', '');
-$GLOBALS['TL_LANG']['fcc_pp_jahrgang']['edit']   = array('', '');
-$GLOBALS['TL_LANG']['fcc_pp_jahrgang']['copy']   = array('', '');
-$GLOBALS['TL_LANG']['fcc_pp_jahrgang']['delete'] = array('', '');
-$GLOBALS['TL_LANG']['fcc_pp_jahrgang']['show']   = array('', '');
+$GLOBALS['TL_LANG']['fcc_pp_jahrgang']['new']    = array('Neue Session', 'Lege eine neue Session an.');
+$GLOBALS['TL_LANG']['fcc_pp_jahrgang']['edit']   = array('Bearbeiten', 'Diese Session bearbeiten.');
+$GLOBALS['TL_LANG']['fcc_pp_jahrgang']['copy']   = array('Kopieren', 'Die Session Nr. %s verdoppeln');
+$GLOBALS['TL_LANG']['fcc_pp_jahrgang']['delete'] = array('L&oum;schen', 'Die Session ID %s l&ouml;schen');
+$GLOBALS['TL_LANG']['fcc_pp_jahrgang']['show']   = array('Anzeigen', 'Info zur Session ID %s anzeigen');
 
 ?>
